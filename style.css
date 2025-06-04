@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: ; */
+}
+
+:root{
+    /* COLORS */
+    /* --white-color: #fff;
+    --dark-color: #201A1B;
+    --primary-color: #FFF3EB;
+    --primary-light-color: #FEF2E8;
+    --secondary-color: ;
+    --dark-buttons: #282940; */
+
+    /* FONT SIZE */
+
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* FONT WEIGHT */
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* SITE MAX WIDTH */
+
+    --site-max-width: 1300px;
+
+}
