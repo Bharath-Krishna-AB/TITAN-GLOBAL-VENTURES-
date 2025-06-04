@@ -78,10 +78,22 @@ header .navbar{
     padding-right: 3rem;
 }
 
+.navbar .nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap :0.2rem;
+}
 .navbar .nav-logo .logo-text{
     color: #252741;
     font-size: var(--font-size-l);
 }
+
+.navbar .nav-logo .logo-img{
+    width: 48px;
+    height: 48px;
+}
+
 
 
 .navbar .nav-menu{
