@@ -73,6 +73,9 @@ img{
 
 header {
     background: #FEF2E8;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
 }
 
 header .navbar{
@@ -115,4 +118,106 @@ header .navbar{
 
 .navbar .nav-menu .nav-link:hover{
     color: #696766;
+}
+
+/* HERO STYLING */
+
+.hero-section {
+    min-height: 100vh;
+    background: #F1E6DA;
+}
+
+.hero-section .section-content{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.hero-section .hero-details{
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem
+}
+
+.hero-section .hero-details .title{
+    font-size: 4rem;
+    font-family: "Lobster", sans-serif;
+    color: #252741;
+    /* font-style: normal; */
+    max-width: 600px;
+    text-align: center;
+    letter-spacing: 5px;
+
+}
+
+.hero-section .hero-details .subtitle{
+    color: #897F79;
+    font-weight: 800;
+    text-align: center;
+    max-width: 600px;
+}
+
+.hero-section .hero-details .buttons .button{
+    margin: 0.5rem;
+    padding: 13px;
+    padding-left: 17px;
+    padding-right: 17px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+.hero-section .hero-details .buttons .explore-products{
+    background: #282940;
+    color: #C7C7CA;
+}
+
+.hero-section .hero-details .buttons .contact-us{
+    background: #ffff;
+    color: #83828A;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+
+
+
+
+
+
+
+
+.hero-section .hero-image-wrapper {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+
+
+
+
+
+.hero-section .hero-image-wrapper .hero-image{
+    width: auto;
+    height: 90vh;
+}
+
+.hero-section .hero-image-wrapper .img-left{
+    position: absolute;
+    left: 0;
+    top: 80px;
+}
+
+.hero-section .hero-image-wrapper .img-right{
+    position: absolute;
+    right: 0;
+    top: 80px;
 }
