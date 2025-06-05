@@ -304,7 +304,7 @@ header .navbar{
 .our-mission-content .our-mission-title{
     color: #2E2F45;
     font-family: "Lobster", sans-serif;
-    font-size: 4rem;
+    font-size: 3.8rem;
     letter-spacing: 5px;
     max-width: 700px;
 }
@@ -344,8 +344,7 @@ header .navbar{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .our-offerings .our-offerings-heading .our-offerings-title{
@@ -395,6 +394,59 @@ header .navbar{
 
 .our-offerings .our-offerings-content .our-offerings-card img{
     width: 350px;
+}
+
+
+/* OUR COMMITEMENT */
+
+.our-commitment{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background: #FFF3EB;
+}
+
+.our-commitment-content{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10rem;
+    gap: 1rem;
+}
+
+.our-commitment-content .tagline{
+    color: #847D82;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+.our-commitment-content .our-commitment-title{
+    color: #2E2F45;
+    font-family: "Lobster", sans-serif;
+    font-size: 3.7rem;
+    letter-spacing: 5px;
+    max-width: 700px;
+}
+
+.our-commitment-content .our-commitment-subtitle{
+    color: #97908D;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: bold;
+    max-width: 430px;
+}
+
+.our-commitment-image-wrapper{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-commitment-image-wrapper img {
+    width: 40rem;
+    border-radius: 5px;
 }
 
 
