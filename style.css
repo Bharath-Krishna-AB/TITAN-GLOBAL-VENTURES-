@@ -449,6 +449,62 @@ header .navbar{
     border-radius: 5px;
 }
 
+.partnership-content{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10rem;
+    gap: 1rem;
+}
+
+/* Partnering styling */
+
+.partnership{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background: #FFF3EB;
+}
+
+.partnership-image-wrapper img {
+    width: 40rem;
+    border-radius: 5px;
+}
+
+.partnership-image-wrapper{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partnership-content .tagline{
+    color: #D7B8A2;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+
+.partnership-content .partnership-title{
+    color: #2E2F45;
+    font-family: "Lobster", sans-serif;
+    font-size: 3.7rem;
+    letter-spacing: 5px;
+    max-width: 700px;
+}
+
+.partnership-content .partnership-subtitle{
+    color: #97908D;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: bold;
+    max-width: 430px;
+}
+
+
 
 @media screen  and (max-width: 900px) {
 
