@@ -279,6 +279,56 @@ header .navbar{
     line-height: 1.5rem;
 }
 
+.our-mission{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background: #FFF3EB;
+}
+
+.our-mission-content{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10rem;
+    gap: 1rem;
+}
+
+.our-mission-content .tagline{
+    color: #847D82;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+.our-mission-content .our-mission-title{
+    color: #2E2F45;
+    font-family: "Lobster", sans-serif;
+    font-size: 4rem;
+    letter-spacing: 5px;
+    max-width: 700px;
+}
+
+.our-mission-content .our-mission-subtitle{
+    color: #97908D;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: bold;
+    max-width: 430px;
+}
+
+.our-mission-image-wrapper{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-mission-image-wrapper img {
+    width: 40rem;
+    border-radius: 5px;
+}
+
 @media screen  and (max-width: 900px) {
 
     .navbar :where(#menu-close-button, #menu-open-button){
