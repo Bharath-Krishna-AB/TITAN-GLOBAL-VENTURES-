@@ -279,6 +279,79 @@ header .navbar{
     line-height: 1.5rem;
 }
 
+/* ABOUT US STYLING */
+
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #FFF3EB;
+}
+
+.about-heading-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.about-heading-wrapper h1{
+    font-size: 3.8rem;
+    font-family: "Lobster", sans-serif;
+    color: #2E2F45;
+}
+
+.about-heading::after{
+    content: "";
+    width: 80%;
+    height: 5px;
+    display: block;
+    margin: 5px auto 0;
+    border-radius: 5px;
+    background: #A69D9C;
+}
+
+
+.about-content{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.about-image-wrapper{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image-wrapper img {
+    width: 40rem;
+    border-radius: 5px;
+    color: #2E2F45;
+    letter-spacing: 3px;
+}
+
+.about-text{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-text p{
+    color: #696766;
+    font-weight: bold;
+    max-width: 550px;
+    letter-spacing: 0.5px;
+}
+
+/* OUR MISSION STYLING */
+
 .our-mission{
     display: flex;
     align-items: center;
@@ -503,8 +576,6 @@ header .navbar{
     font-weight: bold;
     max-width: 430px;
 }
-
-
 
 @media screen  and (max-width: 900px) {
 
