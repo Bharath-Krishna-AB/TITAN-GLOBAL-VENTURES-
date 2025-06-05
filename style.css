@@ -106,8 +106,9 @@ header .navbar{
 .navbar .nav-menu{
     display: flex;
     gap: 10px;
-
 }
+
+
 
 .navbar .nav-menu .nav-link{
     padding: 20px 18px;
@@ -118,6 +119,11 @@ header .navbar{
 
 .navbar .nav-menu .nav-link:hover{
     color: #696766;
+}
+
+
+.navbar :where(#menu-close-button, #menu-open-button){
+    display: none;
 }
 
 /* HERO STYLING */
@@ -146,11 +152,10 @@ header .navbar{
 }
 
 .hero-section .hero-details .title{
-    font-size: 4rem;
+    font-size: 5rem;
     font-family: "Lobster", sans-serif;
     color: #252741;
-    /* font-style: normal; */
-    max-width: 600px;
+    max-width: 800px;
     text-align: center;
     letter-spacing: 5px;
 
@@ -160,18 +165,20 @@ header .navbar{
     color: #897F79;
     font-weight: 800;
     text-align: center;
-    max-width: 600px;
+    max-width: 800px;
+    font-size: 20px;
 }
 
 .hero-section .hero-details .buttons .button{
     margin: 0.5rem;
-    padding: 13px;
-    padding-left: 17px;
-    padding-right: 17px;
+    padding: 17px;
+    padding-left: 27px;
+    padding-right: 27px;
     border-radius: 5px;
     font-weight: 400;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
+    transition: ease-in-out 0.55s;
 }
 
 .hero-section .hero-details .buttons .explore-products{
@@ -179,11 +186,19 @@ header .navbar{
     color: #C7C7CA;
 }
 
+.hero-section .hero-details .buttons .explore-products:hover{
+    background: #1E1F31;
+}
+
 .hero-section .hero-details .buttons .contact-us{
     background: #ffff;
     color: #83828A;
-    padding-left: 27px;
-    padding-right: 27px;
+    padding-left: 37px;
+    padding-right: 37px;
+}
+
+.hero-section .hero-details .buttons .contact-us:hover{
+    background: #EFEFEF;
 }
 
 
@@ -220,4 +235,81 @@ header .navbar{
     position: absolute;
     right: 0;
     top: 80px;
+}
+
+@media screen  and (max-width: 900px) {
+
+    .navbar :where(#menu-close-button, #menu-open-button){
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+
+    body.show-mobile-menu header::before {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar #menu-open-button{
+
+    }
+
+    .navbar #menu-close-button{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .navbar .nav-menu {
+        display: block;
+        position: fixed;
+        left: -300px;
+        top: 0;
+        bottom: 0;
+        width: 300px;
+        height: 100%;
+        background: #897F79;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        transition:  0.2s ease;
+    }
+
+    body.show-mobile-menu .navbar .nav-menu{
+        left: 0;
+    }
+
+    .navbar .nav-menu .nav-link{
+        color: #FFF3EB;
+        font-size: 20px;
+    }
+
+    .hero-section .section-content{
+        gap: 50px;
+        text-align: center;
+        padding: 30px 20px 20px;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .hero-section .hero-image-wrapper{
+        max-width: 270px;
+        margin-right: 0;
+    }
+
+    .hero-section .hero-details :is(.subtitle){
+        max-width: 100%;
+    }
+
+    .hero-section .hero-details .buttons{
+        justify-content: center;
+    }
 }
