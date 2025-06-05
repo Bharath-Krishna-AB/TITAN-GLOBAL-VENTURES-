@@ -89,7 +89,7 @@ header .navbar{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap :0.2rem;
+    gap : 0.2rem;
 }
 .navbar .nav-logo .logo-text{
     color: #252741;
@@ -158,7 +158,6 @@ header .navbar{
     max-width: 800px;
     text-align: center;
     letter-spacing: 5px;
-
 }
 
 .hero-section .hero-details .subtitle{
@@ -221,7 +220,7 @@ header .navbar{
 
 
 .hero-section .hero-image-wrapper .hero-image{
-    width: auto;
+    width: 19rem;
     height: 90vh;
 }
 
@@ -235,6 +234,49 @@ header .navbar{
     position: absolute;
     right: 0;
     top: 80px;
+}
+
+/* overview styling*/
+
+.overview{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FFF3EB;
+}
+
+.overview-image{
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.common{
+    width: 400px;
+    height: 198.86px;
+    border-radius: 5px;
+    background: #F6E9DF;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.overview-title{
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    color: #3C3C41;
+    font-size: 23px;
+}
+
+.overview-subtitle{
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    color: #8F8380;
+    line-height: 1.5rem;
 }
 
 @media screen  and (max-width: 900px) {
