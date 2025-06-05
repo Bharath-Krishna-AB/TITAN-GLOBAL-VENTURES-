@@ -131,6 +131,7 @@ header .navbar{
 .hero-section {
     min-height: 100vh;
     background: #F1E6DA;
+    
 }
 
 .hero-section .section-content{
@@ -143,7 +144,7 @@ header .navbar{
 
 .hero-section .hero-details{
     z-index: 1;
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,12 +153,11 @@ header .navbar{
 }
 
 .hero-section .hero-details .title{
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-family: "Lobster", sans-serif;
     color: #252741;
     max-width: 800px;
     text-align: center;
-    letter-spacing: 5px;
 }
 
 .hero-section .hero-details .subtitle{
@@ -240,7 +240,7 @@ header .navbar{
 
 .overview{
     width: 100%;
-    height: 30vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -251,6 +251,7 @@ header .navbar{
     width: 400px;
     height: auto;
     border-radius: 5px;
+    margin-top: 2rem;
 }
 
 .common{
@@ -265,6 +266,7 @@ header .navbar{
     gap: 1.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-top: 1rem;
 }
 
 .overview-title{
@@ -298,7 +300,7 @@ header .navbar{
 }
 
 .about-heading-wrapper h1{
-    font-size: 3.8rem;
+    font-size: 3rem;
     font-family: "Lobster", sans-serif;
     color: #2E2F45;
 }
@@ -332,7 +334,6 @@ header .navbar{
     width: 40rem;
     border-radius: 5px;
     color: #2E2F45;
-    letter-spacing: 3px;
 }
 
 .about-text{
@@ -347,7 +348,6 @@ header .navbar{
     color: #696766;
     font-weight: bold;
     max-width: 550px;
-    letter-spacing: 0.5px;
 }
 
 /* OUR MISSION STYLING */
@@ -369,6 +369,7 @@ header .navbar{
     gap: 1rem;
 }
 
+
 .our-mission-content .tagline{
     color: #847D82;
     font-family: "Atkinson Hyperlegible", sans-serif;
@@ -378,8 +379,9 @@ header .navbar{
     color: #2E2F45;
     font-family: "Lobster", sans-serif;
     font-size: 3.8rem;
-    letter-spacing: 5px;
     max-width: 700px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .our-mission-content .our-mission-subtitle{
@@ -424,7 +426,6 @@ header .navbar{
     color: #3D3C3E;
     font-family: "Lobster", sans-serif;
     font-size: 45px;
-    letter-spacing: 3px;
 }
 
 .our-offerings .our-offerings-heading .our-offerings-subtitle{
@@ -498,8 +499,9 @@ header .navbar{
     color: #2E2F45;
     font-family: "Lobster", sans-serif;
     font-size: 3.7rem;
-    letter-spacing: 5px;
     max-width: 700px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .our-commitment-content .our-commitment-subtitle{
@@ -566,8 +568,9 @@ header .navbar{
     color: #2E2F45;
     font-family: "Lobster", sans-serif;
     font-size: 3.7rem;
-    letter-spacing: 5px;
     max-width: 700px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .partnership-content .partnership-subtitle{
@@ -576,6 +579,9 @@ header .navbar{
     font-weight: bold;
     max-width: 430px;
 }
+
+
+/* TABLET */
 
 @media screen  and (max-width: 900px) {
 
@@ -609,18 +615,18 @@ header .navbar{
     .navbar .nav-menu {
         display: block;
         position: fixed;
-        left: -300px;
+        left: -50vw;
         top: 0;
         bottom: 0;
-        width: 300px;
+        width: 50%;
         height: 100%;
-        background: #897F79;
+        background: #fff3eb98;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 5rem;
-        transition:  0.2s ease;
+        transition:  0.5s ease;
     }
 
     body.show-mobile-menu .navbar .nav-menu{
@@ -632,6 +638,19 @@ header .navbar{
         font-size: 20px;
     }
 
+    .hero-image-wrapper{
+        display: none;
+    }
+    
+    .hero-section .hero-details .title{
+        font-size: 3rem;
+        max-width: 500px;
+    }
+
+    .hero-section .hero-details .subtitle{
+        font-size: 1rem;
+        max-width:650px !important;
+    }
     .hero-section .section-content{
         gap: 50px;
         text-align: center;
@@ -643,6 +662,7 @@ header .navbar{
     .hero-section .hero-image-wrapper{
         max-width: 270px;
         margin-right: 0;
+        
     }
 
     .hero-section .hero-details :is(.subtitle){
@@ -651,5 +671,103 @@ header .navbar{
 
     .hero-section .hero-details .buttons{
         justify-content: center;
+    }
+
+    .overview{
+        flex-direction: column;
+    }
+
+    .about{
+        height: 100%;
+    }
+
+   
+    .about-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image-wrapper{
+        width: 100vw;
+    }
+
+    .about-image-wrapper img{
+        width: 26rem;
+    }
+
+    .about-text{
+        width: 100vw;
+        margin-top: 30px;
+        max-width: 26rem;
+    }
+
+    .our-mission{
+        flex-direction: column;
+    }
+
+    .our-mission-content{
+        width: 100%;
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .our-mission-image-wrapper img{
+        width: 27rem;
+        margin-bottom: 30px;
+    }
+
+    .our-mission-content .our-mission-title{
+        font-size: 2rem;
+    }
+
+    .our-offerings{
+        height: 100%;
+    }
+    .our-offerings-content{
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: space-evenly !important;
+        gap: 3rem;
+    }
+
+    .our-offerings-title{
+        font-size: 2rem !important;
+    }
+
+    .our-commitment{
+        flex-direction: column;
+        height: 100%;
+        padding-top: 30px;
+    }
+
+    .our-commitment-content{
+        width: 100%;
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .our-commitment-title{
+        font-size: 2rem !important;
+    }
+
+    .our-commitment-image-wrapper img{
+        width: 27rem;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .partnership{
+        flex-direction: column-reverse;
+        padding-bottom: 30px;
+    }
+
+    .partnership-content{
+        width: 100%;
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .partnership-title{
+        font-size: 2rem !important;
     }
 }
