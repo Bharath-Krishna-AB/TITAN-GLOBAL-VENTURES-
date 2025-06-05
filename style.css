@@ -594,11 +594,12 @@ header .navbar{
     background: #A69D9C;
 }
 
-.contact-section .section-content{
+.contact-section .contact-section-content{
     display: flex;
     gap: 48px;
     align-items: flex-start;
     justify-content: space-between;
+    padding: 30px;
 }
 
 .contact-section .contact-info-list .contact-info {
@@ -1328,5 +1329,9 @@ header .navbar{
 
     .partnership-title{
         font-size: 2rem !important;
+    }
+
+    .contact-section-content{
+        flex-direction: column;
     }
 }
