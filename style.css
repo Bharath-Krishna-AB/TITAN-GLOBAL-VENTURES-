@@ -388,7 +388,7 @@ header .navbar{
 
 .about-image-wrapper img {
     width: 38rem;
-    border-radius: 5px;
+    border-radius: 10px;
     color: #2E2F45;
     animation: appearTranslateLeft linear;
     animation-timeline: view();
@@ -407,6 +407,8 @@ header .navbar{
     color: #696766;
     font-weight: bold;
     max-width: 550px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
     animation: appearTranslateRight linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
@@ -456,7 +458,8 @@ header .navbar{
     color: #97908D;
     font-family: "Atkinson Hyperlegible", sans-serif;
     font-weight: bold;
-    max-width: 430px;
+    max-width: 450px;
+    font-size: 17px;
     animation: appearTranslateLeft linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
@@ -472,7 +475,7 @@ header .navbar{
 
 .our-mission-image-wrapper img {
     width: 35rem;
-    border-radius: 5px;
+    border-radius: 10px;
     animation: appearTranslateRight linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
@@ -603,10 +606,11 @@ header .navbar{
     color: #97908D;
     font-family: "Atkinson Hyperlegible", sans-serif;
     font-weight: bold;
-    max-width: 430px;
     animation: appearTranslateLeft linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+    max-width: 450px;
+    font-size: 17px;
 }
 
 .our-commitment-image-wrapper{
@@ -619,7 +623,7 @@ header .navbar{
 
 .our-commitment-image-wrapper img {
     width: 35rem;
-    border-radius: 5px;
+    border-radius: 10px;
     animation: appearTranslateRight linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
@@ -640,13 +644,13 @@ header .navbar{
 .partnership{
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     background: #FFF3EB;
 }
 
 .partnership-image-wrapper img {
     width: 35rem;
-    border-radius: 5px;
+    border-radius: 10px;
     animation: appearTranslateLeft linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
@@ -658,6 +662,7 @@ header .navbar{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 40px;
 }
 
 .partnership-content .tagline{
@@ -687,7 +692,8 @@ header .navbar{
     color: #97908D;
     font-family: "Atkinson Hyperlegible", sans-serif;
     font-weight: bold;
-    max-width: 430px;
+    max-width: 450px;
+    font-size: 17px;
     animation: appearTranslateRight linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
@@ -805,17 +811,93 @@ header .navbar{
 
 
 /* FOOTER STYLING */
+.footer-section{
+    width: 100vw;
+    background: #FFF3EA;
 
-@keyframes appear {
-    from{
-        opacity: 0;
-        scale: 0.5;
-    }
-    to{
-        opacity: 1;
-        scale: 1;
-    }
 }
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px;
+}
+
+.title-and-rights-wrapper{
+    /* gap: 30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+}
+
+.company-logo-section{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.company-logo-section img{
+    width: 48px;
+    height: 48px;
+}
+
+.company-logo-section h2{
+    color: #847C78;
+}
+
+.copyright-text-wrapper{
+    color: #847C78;
+    margin-top: 20px;
+}
+
+.copyright-text{
+
+}
+
+.links-wrapper{
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.quicklinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #847C78;
+    gap: 10px;
+}
+
+.quicklinks p {
+    font-weight: bold;
+}
+
+.quicklinks a{
+    color: #847C78;
+}
+
+.our-locations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    color: #847C78;
+    gap: 10px;
+}
+
+.our-locations p {
+    font-weight: bold;
+}
+
+.our-locations a{
+    color: #847C78;
+}
+
+
+
+
+
 
 
 /* 1024 px screen */
@@ -865,18 +947,6 @@ header .navbar{
         transition:  0.5s ease;
     }
 
-    body.show-mobile-menu .navbar .nav-menu{
-        left: 0;
-    }
-
-    .navbar .nav-menu .nav-link{
-        color: #FFF3EB;
-        font-size: 20px;
-    }
-
-    .hero-image-wrapper{
-        display: none;
-    }
 
     .hero-section .hero-details .title{
         font-size: 4rem;
@@ -925,6 +995,18 @@ header .navbar{
 
     }
 
+    .about-our-bussiness{
+        animation: appearTranslateRight linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
+    .our-expertise{
+        animation: appearTranslateLeft linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
     .about{
         height: 100%;
     }
@@ -940,13 +1022,16 @@ header .navbar{
     }
 
     .about-image-wrapper img{
-        width: 32rem;
+        width: 45rem;
     }
 
     .about-text{
         width: 100vw;
         margin-top: 50px;
-        max-width: 32rem;
+    }
+
+    .about-text p{
+        max-width: 45rem ;
     }
 
     .our-mission{
@@ -961,21 +1046,22 @@ header .navbar{
     }
 
     .our-mission-content div{
-        width: 32rem;
+        width: 45rem;
     }
 
     .our-mission-image-wrapper img{
-        width: 32rem;
+        width: 45rem;
         margin-bottom: 30px;
     }
 
 
     .our-mission-content .our-mission-title{
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .our-mission-subtitle{
         margin-bottom: 30px;
+        font-size: 17px;
     }
 
     .our-offerings{
@@ -1005,13 +1091,17 @@ header .navbar{
     }
 
     .our-commitment-content div{
-        width: 32rem;
+        width: 45rem;
     }
 
     .our-commitment-title{
-        font-size: 3rem !important;
+        font-size: 4rem !important;
     }
     
+
+    .our-commitment-subtitle{
+        font-size: 17px;
+    }
 
     .partnership-content{
         margin-bottom: 30px;
@@ -1019,7 +1109,7 @@ header .navbar{
 
 
     .our-commitment-image-wrapper img{
-        width: 32rem;
+        width: 45rem;
         margin-bottom: 30px;
         margin-top: 30px;
     }
@@ -1040,7 +1130,7 @@ header .navbar{
     }
 
     .partnership-content div{
-        width: 32rem;
+        width: 45rem;
     }
 
     .partnership-image-wrapper {
@@ -1049,11 +1139,15 @@ header .navbar{
 
 
     .partnership-image-wrapper img{
-        width: 32rem;
+        width: 45rem;
     }
 
     .partnership-title{
-        font-size: 3rem !important;
+        font-size: 4rem !important;
+    }
+
+    .partnership-subtitle{
+        font-size: 17px;
     }
 
 }
@@ -1166,6 +1260,18 @@ header .navbar{
         padding-left: 2rem;
         padding-right: 2rem;
 
+    }
+
+    .about-our-bussiness{
+        animation: appearTranslateRight linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
+    .our-expertise{
+        animation: appearTranslateLeft linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
     }
 
     .about{
@@ -1397,6 +1503,18 @@ header .navbar{
         flex-direction: column;
     }
 
+    .about-our-bussiness{
+        animation: appearTranslateRight linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
+    .our-expertise{
+        animation: appearTranslateLeft linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
     .about{
         height: 100%;
     }
@@ -1489,6 +1607,10 @@ header .navbar{
 
     .partnership-title{
         font-size: 2rem !important;
+    }
+
+    .partnership-subtitle{
+        margin-bottom: 20px;
     }
 
     .contact-section-content{
