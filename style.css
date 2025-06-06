@@ -1014,13 +1014,13 @@ header .navbar{
     }
 
     .about-our-bussiness{
-        animation: appearTranslateRight linear;
+        animation: appearTranslateDown linear;
         animation-timeline: view();
         animation-range: entry 0% cover 40%;
     }
 
     .our-expertise{
-        animation: appearTranslateLeft linear;
+        animation: appearTranslateDown linear;
         animation-timeline: view();
         animation-range: entry 0% cover 40%;
     }
@@ -1535,13 +1535,13 @@ header .navbar{
     }
 
     .about-our-bussiness{
-        animation: appearTranslateRight linear;
+        animation: appearTranslateDown linear;
         animation-timeline: view();
         animation-range: entry 0% cover 40%;
     }
 
     .our-expertise{
-        animation: appearTranslateLeft linear;
+        animation: appearTranslateDown linear;
         animation-timeline: view();
         animation-range: entry 0% cover 40%;
     }
