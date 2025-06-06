@@ -243,12 +243,14 @@ header .navbar{
     transition: ease-in-out 0.55s;
 }
 
-.hero-section .hero-details .buttons .explore-products{
+.hero-section .hero-details .buttons .explore-aboutus{
     background: #282940;
     color: #C7C7CA;
+    padding-left: 37px;
+    padding-right: 37px;
 }
 
-.hero-section .hero-details .buttons .explore-products:hover{
+.hero-section .hero-details .buttons .explore-aboutus:hover{
     background: #1E1F31;
 }
 
