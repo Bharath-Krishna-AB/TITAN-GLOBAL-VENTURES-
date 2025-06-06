@@ -302,7 +302,7 @@ header .navbar{
     height: auto;
     border-radius: 5px;
     margin-top: 2rem;
-    animation: appearTranslateLeft linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -328,7 +328,7 @@ header .navbar{
 }
 
 .our-expertise{
-    animation: appearTranslateRight linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -361,7 +361,7 @@ header .navbar{
     justify-content: center;
     width: 100%;
     padding: 2rem;
-    animation: appearScale linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -401,7 +401,7 @@ header .navbar{
     width: 38rem;
     border-radius: 10px;
     color: #2E2F45;
-    animation: appearTranslateLeft linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -420,7 +420,7 @@ header .navbar{
     max-width: 550px;
     font-size: 20px;
     font-family: "Roboto", sans-serif;
-    animation: appearTranslateRight linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -448,7 +448,7 @@ header .navbar{
 .our-mission-content .tagline{
     color: #847D82;
     font-family: "Atkinson Hyperlegible", sans-serif;
-    animation: appearTranslateLeft linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -460,7 +460,7 @@ header .navbar{
     max-width: 700px;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    animation: appearTranslateLeft linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -471,7 +471,7 @@ header .navbar{
     font-weight: bold;
     max-width: 450px;
     font-size: 17px;
-    animation: appearTranslateLeft linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -487,7 +487,7 @@ header .navbar{
 .our-mission-image-wrapper img {
     width: 35rem;
     border-radius: 10px;
-    animation: appearTranslateRight linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -596,7 +596,7 @@ header .navbar{
 .our-commitment-content .tagline{
     color: #847D82;
     font-family: "Atkinson Hyperlegible", sans-serif;
-    animation: appearTranslateLeft linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -608,7 +608,7 @@ header .navbar{
     max-width: 700px;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    animation: appearTranslateLeft linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -617,7 +617,7 @@ header .navbar{
     color: #97908D;
     font-family: "Atkinson Hyperlegible", sans-serif;
     font-weight: bold;
-    animation: appearTranslateLeft linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
     max-width: 450px;
@@ -635,7 +635,7 @@ header .navbar{
 .our-commitment-image-wrapper img {
     width: 35rem;
     border-radius: 10px;
-    animation: appearTranslateRight linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -662,7 +662,7 @@ header .navbar{
 .partnership-image-wrapper img {
     width: 35rem;
     border-radius: 10px;
-    animation: appearTranslateLeft linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -681,7 +681,7 @@ header .navbar{
     font-size: 17px;
     font-weight: bold;
     font-family: "Atkinson Hyperlegible", sans-serif;
-    animation: appearTranslateRight linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -694,7 +694,7 @@ header .navbar{
     max-width: 700px;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    animation: appearTranslateRight linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -705,7 +705,7 @@ header .navbar{
     font-weight: bold;
     max-width: 450px;
     font-size: 17px;
-    animation: appearTranslateRight linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -757,7 +757,7 @@ header .navbar{
     gap: 20px;
     margin: 20px 0;
     align-items: center;
-    animation: appearTranslateLeft linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -777,7 +777,7 @@ header .navbar{
     margin-bottom: 16px;
     padding: 5px;
     padding-left: 20px;
-    animation: appearTranslateRight linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -793,7 +793,7 @@ header .navbar{
     resize: vertical;
     height:100px !important;
     padding-top: 15px !important;
-    animation: appearTranslateRight linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -809,7 +809,7 @@ header .navbar{
     font-size: 15px;
     border: solid 1px #FFF3EA;
     transition: 1s ease-in-out;
-    animation: appearTranslateRight linear;
+    animation: appearTranslateDown linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
     
