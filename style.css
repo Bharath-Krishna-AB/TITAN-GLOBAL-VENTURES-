@@ -819,8 +819,8 @@ header .navbar{
 .footer-content{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 100px;
+    justify-content: space-around;
+    padding: 50px;
 }
 
 .title-and-rights-wrapper{
