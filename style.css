@@ -46,6 +46,10 @@ html{
     scroll-padding-top: 78px;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 ul {
     list-style: none;
 }
