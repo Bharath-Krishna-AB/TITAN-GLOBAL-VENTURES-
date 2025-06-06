@@ -41,6 +41,11 @@
 
 /* basic styling for elements */
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 78px;
+}
+
 ul {
     list-style: none;
 }
