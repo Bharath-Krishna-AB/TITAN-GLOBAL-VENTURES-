@@ -884,6 +884,10 @@ header .navbar{
     color: #847C78;
 }
 
+.quicklinks a:hover{
+    color: #696766;
+}
+
 .our-locations{
     display: flex;
     flex-direction: column;
@@ -899,6 +903,10 @@ header .navbar{
 
 .our-locations a{
     color: #847C78;
+}
+
+.our-locations a:hover{
+    color: #696766;
 }
 
 
