@@ -1061,6 +1061,7 @@ header .navbar{
         width: 100%;
         padding-left: 0;
         align-items: center;
+        justify-content: center;
     }
 
     .our-mission-content div{
