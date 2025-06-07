@@ -838,7 +838,7 @@ header .navbar{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50vw;
+    width: 50%;
 }
 
 .company-logo-section{
@@ -866,7 +866,7 @@ header .navbar{
 }
 
 .links-wrapper{
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
 }
@@ -1169,6 +1169,10 @@ header .navbar{
         font-size: 17px;
     }
 
+    .company-logo-section h2{
+        font-size: 1.4rem !important;
+    }
+
 }
 
 
@@ -1436,6 +1440,10 @@ header .navbar{
         align-items: center;
     }
 
+    .links-wrapper{
+        width: 100%;
+    }
+
 }
 
 
@@ -1660,5 +1668,9 @@ header .navbar{
         width: 100%;
         display: flex;
         align-items: center;
+    }
+
+    .links-wrapper{
+        width: 100%;
     }
 }
