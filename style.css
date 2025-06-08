@@ -925,7 +925,6 @@ header .navbar{
 
 /* 1024 px screen */
 @media screen  and (max-width: 1260px) and (min-width: 900px) {
-    
     .navbar :where(#menu-close-button, #menu-open-button){
         display: block;
         width: 20px;
@@ -961,13 +960,22 @@ header .navbar{
         bottom: 0;
         width: 50%;
         height: 100%;
-        background: #fff3eb98;
+        background: #F1E6DA;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 5rem;
         transition:  0.5s ease;
+    }
+
+    body.show-mobile-menu .navbar .nav-menu{
+        left: 0;
+    }
+
+    .navbar .nav-menu .nav-link{
+        color: #A5A09F;
+        font-size: 20px;
     }
 
 
@@ -1221,7 +1229,7 @@ header .navbar{
         bottom: 0;
         width: 50%;
         height: 100%;
-        background: #fff3eb98;
+        background: #F1E6DA;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1235,7 +1243,7 @@ header .navbar{
     }
 
     .navbar .nav-menu .nav-link{
-        color: #FFF3EB;
+        color: #A5A09F;
         font-size: 20px;
     }
 
@@ -1491,7 +1499,7 @@ header .navbar{
         bottom: 0;
         width: 50%;
         height: 100%;
-        background: #fff3eb98;
+        background: #F1E6DA;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1505,7 +1513,7 @@ header .navbar{
     }
 
     .navbar .nav-menu .nav-link{
-        color: #FFF3EB;
+        color: #A5A09F;
         font-size: 20px;
     }
 
@@ -1722,7 +1730,7 @@ header .navbar{
         bottom: 0;
         width: 50%;
         height: 100%;
-        background: #fff3eb98;
+        background: #F1E6DA;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1736,7 +1744,7 @@ header .navbar{
     }
 
     .navbar .nav-menu .nav-link{
-        color: #FFF3EB;
+        color: #A5A09F;
         font-size: 20px;
     }
 
