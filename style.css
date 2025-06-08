@@ -1685,6 +1685,10 @@ header .navbar{
         align-items: center;
     }
 
+    .company-logo-section h2{
+        font-size: 1.3rem !important;
+    }
+
     .links-wrapper{
         width: 100%;
     }
@@ -1918,6 +1922,10 @@ header .navbar{
         width: 100%;
         display: flex;
         align-items: center;
+    }
+
+    .company-logo-section h2{
+        font-size: 1.2rem !important;
     }
 
     .links-wrapper{
