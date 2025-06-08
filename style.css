@@ -1286,13 +1286,13 @@ header .navbar{
     }
 
     .about-our-bussiness{
-        animation: appearTranslateRight linear;
+        animation: appearTranslateDown linear;
         animation-timeline: view();
         animation-range: entry 0% cover 40%;
     }
 
     .our-expertise{
-        animation: appearTranslateLeft linear;
+        animation: appearTranslateDown linear;
         animation-timeline: view();
         animation-range: entry 0% cover 40%;
     }
@@ -1449,7 +1449,7 @@ header .navbar{
 
 /* mobile */
 
-@media screen  and (max-width: 720px) {
+@media screen  and (max-width: 720px) and (min-width : 500px) {
 
     .navbar :where(#menu-close-button, #menu-open-button){
         display: block;
@@ -1581,6 +1581,239 @@ header .navbar{
 
     .our-mission{
         flex-direction: column;
+        height: auto !important;
+        gap: 30px;
+    }
+
+    .our-mission-content{
+        width: 100%;
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .our-mission-image-wrapper img{
+        width: 27rem;
+        margin-bottom: 30px;
+    }
+
+    .our-mission-content .our-mission-title{
+        font-size: 2rem;
+    }
+
+    .our-offerings{
+        height: 100%;
+    }
+    .our-offerings-content{
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: space-evenly !important;
+        gap: 3rem;
+    }
+
+    .our-offerings-title{
+        font-size: 2rem !important;
+    }
+
+    .our-commitment{
+        flex-direction: column;
+        height: 100%;
+        padding-top: 30px;
+    }
+
+    .our-commitment-content{
+        width: 100%;
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .our-commitment-title{
+        font-size: 2rem !important;
+    }
+
+    .our-commitment-image-wrapper img{
+        width: 27rem;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .partnership{
+        flex-direction: column-reverse;
+        padding-bottom: 30px;
+    }
+
+    .partnership-content{
+        width: 100%;
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .partnership-title{
+        font-size: 2rem !important;
+    }
+
+    .partnership-subtitle{
+        margin-bottom: 30px;
+    }
+
+    .contact-section-content{
+        flex-direction: column;
+    }
+
+    
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .title-and-rights-wrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .links-wrapper{
+        width: 100%;
+    }
+}
+
+
+/* mini mobile */
+
+@media screen  and (max-width: 500px) {
+
+    .navbar :where(#menu-close-button, #menu-open-button){
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+
+    body.show-mobile-menu header::before {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar #menu-open-button{
+
+    }
+
+    .navbar #menu-close-button{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .navbar .nav-menu {
+        display: block;
+        position: fixed;
+        left: -50vw;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        height: 100%;
+        background: #fff3eb98;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        transition:  0.5s ease;
+    }
+
+    body.show-mobile-menu .navbar .nav-menu{
+        left: 0;
+    }
+
+    .navbar .nav-menu .nav-link{
+        color: #FFF3EB;
+        font-size: 20px;
+    }
+
+    .hero-image-wrapper{
+        display: none;
+    }
+
+    .hero-section .hero-details .title{
+        font-size: 3rem;
+        max-width: 500px;
+    }
+
+    .hero-section .hero-details .subtitle{
+        font-size: 1rem;
+        max-width:650px !important;
+    }
+    .hero-section .section-content{
+        gap: 50px;
+        text-align: center;
+        padding: 30px 20px 20px;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .hero-section .hero-image-wrapper{
+        max-width: 270px;
+        margin-right: 0;
+        
+    }
+
+    .hero-section .hero-details :is(.subtitle){
+        max-width: 100%;
+    }
+
+    .hero-section .hero-details .buttons{
+        justify-content: center;
+    }
+
+    .overview{
+        flex-direction: column;
+    }
+
+    .about-our-bussiness{
+        animation: appearTranslateDown linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
+    .our-expertise{
+        animation: appearTranslateDown linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
+    .about{
+        height: 100%;
+    }
+
+   
+    .about-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image-wrapper{
+        width: 100vw;
+    }
+
+    .about-image-wrapper img{
+        width: 26rem;
+    }
+
+    .about-text{
+        width: 100vw;
+        margin-top: 30px;
+        max-width: 26rem;
+    }
+
+    .our-mission{
+        flex-direction: column;
+        height: auto !important;
+        gap: 30px;
     }
 
     .our-mission-content{
