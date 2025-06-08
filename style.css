@@ -1836,7 +1836,7 @@ header .navbar{
     }
 
     .our-mission-image-wrapper img{
-        width: 27rem;
+        width: 26rem;
         margin-bottom: 30px;
     }
 
@@ -1875,7 +1875,7 @@ header .navbar{
     }
 
     .our-commitment-image-wrapper img{
-        width: 27rem;
+        width: 26rem;
         margin-bottom: 30px;
         margin-top: 30px;
     }
@@ -1897,6 +1897,10 @@ header .navbar{
 
     .partnership-subtitle{
         margin-bottom: 30px;
+    }
+
+    .partnership-image-wrapper img{
+        width: 26rem;
     }
 
     .contact-section-content{
