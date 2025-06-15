@@ -812,7 +812,6 @@ header .navbar{
     background: #585049;
     border-radius: 55px;
     font-size: 15px;
-    border: solid 1px #FFF3EA;
     transition: 1s ease-in-out;
     animation: appearTranslateDown linear;
     animation-timeline: view();
@@ -821,8 +820,7 @@ header .navbar{
 }
 
 .contact-section .contact-form .submit-button:hover{
-    background: #FFF3EA;
-    color: #585049;
+    background: #3e3934;
 }
 
 
