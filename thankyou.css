@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+
+}
+
+
+body{
+    height: 100vh;
+    background: #D7BEA8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content{
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h1{
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    color: #2E2F45;
+}
+
+.para-container{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.para-container p{
+    font-size: 17px;
+    color: #3f404f;
+    font-weight: 600;
+}
+
+.content a{
+    text-decoration: none;
+    color: #2E2F45;
+    font-weight: 700;
+    font-size: 40px;
+    border-radius: 5px;
+    position: fixed;
+    top: 10px;
+    left: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    border-radius: 100px;
+}
+
+.content a:hover{
+    color: #3f404f;
+}
+
+@media screen and (max-width: 600px) {
+    .content h1{
+        font-size: 50px;
+    }
+    .para-container p{
+        font-size: 15px;
+    }
+    .content a{
+        font-size: 30px;
+        top: 20px;
+        left: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    .content h1{
+        font-size: 40px;
+    }
+
+    .para-container p{
+        font-size: 13px;
+    }
+    .content a{
+        font-size: 30px;
+        top: 15px;
+        left: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 370px) {
+    .content h1{
+        font-size: 35px;
+    }
+
+    .para-container p{
+        font-size: 12px;
+    }
+    .content a{
+        font-size: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 340px) {
+    .content h1{
+        font-size: 30px;
+    }
+
+    .para-container p{
+        font-size: 11px;
+    }
+    .content a{
+        font-size: 30px;
+    }
+
+}
