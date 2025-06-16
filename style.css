@@ -1829,6 +1829,10 @@ header .navbar{
         align-items: center;
     }
 
+    .our-mission-subtitle{
+        max-width: 26rem !important;
+    }
+
     .our-mission-image-wrapper img{
         width: 26rem;
         margin-bottom: 30px;
@@ -1867,6 +1871,10 @@ header .navbar{
     .our-commitment-title{
         font-size: 2rem !important;
     }
+    
+    .our-commitment-subtitle{
+        max-width: 26rem !important;
+    }
 
     .our-commitment-image-wrapper img{
         width: 26rem;
@@ -1881,7 +1889,7 @@ header .navbar{
 
     .partnership-content{
         width: 100%;
-        padding-left: 0;
+        padding-left: 0px;
         align-items: center;
     }
 
@@ -1891,6 +1899,7 @@ header .navbar{
 
     .partnership-subtitle{
         margin-bottom: 30px;
+        max-width: 26rem !important;
     }
 
     .partnership-image-wrapper img{
@@ -1906,6 +1915,7 @@ header .navbar{
         display: flex;
         flex-direction: column;
         gap: 50px;
+        padding: 30px !important;
     }
 
     .title-and-rights-wrapper{
@@ -1917,6 +1927,276 @@ header .navbar{
     .company-logo-section h2{
         font-size: 1.2rem !important;
     }
+
+    .links-wrapper{
+        width: 100%;
+    }
+}
+
+
+/* #mini-mini mobile */
+
+@media screen  and (max-width: 425px) {
+
+    .navbar :where(#menu-close-button, #menu-open-button){
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+
+    body.show-mobile-menu header::before {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.2);
+    }
+    
+    .navbar #menu-close-button{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .navbar .nav-menu {
+        display: block;
+        position: fixed;
+        left: -50vw;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        height: 100%;
+        background: #F1E6DA;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        transition:  0.5s ease;
+    }
+
+    body.show-mobile-menu .navbar .nav-menu{
+        left: 0;
+    }
+
+    .navbar .nav-menu .nav-link{
+        color: #A5A09F;
+        font-size: 20px;
+    }
+
+    .navbar .nav-logo .logo-img{
+        /* width: 34px;
+        height: 34px; */
+    }
+
+    .navbar .nav-logo .logo-text {
+        font-size: 1rem !important;
+    }
+
+    .hero-image-wrapper{
+        display: none;
+    }
+
+    .hero-section .hero-details .title{
+        font-size: 3rem;
+        max-width: 500px;
+    }
+
+    .hero-section .hero-details .subtitle{
+        font-size: 1rem;
+        max-width:650px !important;
+    }
+    .hero-section .section-content{
+        gap: 50px;
+        text-align: center;
+        padding: 30px 20px 20px;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .hero-section .hero-image-wrapper{
+        max-width: 270px;
+        margin-right: 0;
+        
+    }
+
+    .hero-section .hero-details :is(.subtitle){
+        max-width: 100%;
+    }
+
+    .hero-section .hero-details .buttons{
+        justify-content: center;
+    }
+
+    .overview{
+        flex-direction: column;
+    }
+
+    .overview-image{
+        width: 350px !important;
+    }
+
+    .about-our-bussiness{
+        width: 350px !important;
+        animation: appearTranslateDown linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
+    .our-expertise{
+        width: 350px !important;
+        animation: appearTranslateDown linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
+    .about{
+        height: 100%;
+    }
+
+   
+    .about-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image-wrapper{
+        width: 100vw;
+    }
+
+    .about-image-wrapper img{
+        width: 22rem;
+    }
+
+    .about-text{
+        width: 100vw;
+        margin-top: 30px;
+        max-width: 22rem;
+    }
+
+    .our-mission{
+        flex-direction: column;
+        height: auto !important;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .our-mission-content{
+        width: 100%;
+        padding-left: 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    .our-mission-subtitle{
+        max-width: 22rem !important;
+    }
+
+    .our-mission-image-wrapper img{
+        width: 22rem;
+        margin-bottom: 30px;
+    }
+
+
+    .our-mission-content .our-mission-title{
+        font-size: 1.8rem;
+        margin-top: 0px !important;
+    }
+
+    .our-offerings{
+        height: 100%;
+        padding: 3rem !important;
+    }
+    .our-offerings-content{
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: space-evenly !important;
+        gap: 3rem;
+    }
+
+    .our-offerings-title{
+        font-size: 1.8rem !important;
+    }
+
+    .our-commitment{
+        flex-direction: column;
+        height: 100%;
+        padding-top: 30px;
+    }
+
+    .our-commitment-content{
+        width: 100%;
+        padding-left: 0px;
+        align-items: center;
+    }
+
+    .our-commitment-title{
+        font-size: 1.8rem !important;
+        margin-top: 0px !important;
+    }
+
+    .our-commitment-subtitle{
+        max-width: 22rem !important;
+    }
+
+    .our-commitment-image-wrapper img{
+        width: 22rem;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .partnership{
+        flex-direction: column-reverse;
+        padding-bottom: 30px;
+    }
+
+    .partnership-content{
+        width: 100%;
+        padding-left: 0px;
+        align-items: center;
+    }
+
+    .partnership-content p{
+        max-width: 22rem !important;
+    }
+
+
+    .partnership-title{
+        font-size: 1.8rem !important;
+        margin-top: 0px !important;
+    }
+
+    .partnership-subtitle{
+        margin-bottom: 30px;
+    }
+
+    .partnership-image-wrapper img{
+        width: 22rem;
+    }
+
+    .contact-section-content{
+        flex-direction: column;
+    }
+
+
+    
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 30px !important;
+    }
+
+    .title-and-rights-wrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+
 
     .links-wrapper{
         width: 100%;
